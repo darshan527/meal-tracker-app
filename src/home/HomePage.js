@@ -18,7 +18,7 @@ export const HomePage = () => {
       <div className="column">
         <MealsList isLoading={isLoadingMeals} meals={meals} />
       </div>
-      {/* <div className="column">
+      <div className="column">
         <IngredientsList
           isLoading={isLoadingIngredients}
           ingredients={ingredients}
@@ -28,7 +28,7 @@ export const HomePage = () => {
             Generate Shopping List
           </button>
         </Link>
-      </div> */}
+      </div>
     </div>
   );
 };
