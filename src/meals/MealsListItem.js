@@ -9,7 +9,7 @@ export const MealsListItem = ({ meal, date, onDelete }) => (
         <h3>{date.getDate()}</h3>
         <p>{meal.recipe.name}</p>
         <div className="right-action">
-          <SmallX />
+          <SmallX onClick={() => onDelete(meal._id)} />
         </div>
       </>
     ) : (
