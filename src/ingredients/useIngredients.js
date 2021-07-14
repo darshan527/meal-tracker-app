@@ -6,11 +6,10 @@ export const useIngredients = () => {
   useEffect(() => {
     const loadIngredients = async () => {
       const response = await fetch("/ingredients");
-      const ingredients = await response.json();
-      setIngredients(ingredients);
+      const ingredientsRes = await response.json();
+      setIngredients(ingredientsRes);
       setIsLoading(false);
     };
-
     loadIngredients();
   }, []);
 
