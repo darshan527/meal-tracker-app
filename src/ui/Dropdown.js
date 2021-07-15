@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Dropdown = ({ options = [], ...props }) => {
+export const Dropdown = ({ options = [], ...props }) => (
     <select {...props}>
         {options.map(opt => (
             <option key={opt} value={opt}>
@@ -8,4 +8,4 @@ export const Dropdown = ({ options = [], ...props }) => {
             </option>
         ))}
     </select>
-}
+)
