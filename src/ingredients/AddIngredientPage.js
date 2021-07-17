@@ -9,7 +9,6 @@ const unitOptions = [
     'tsp',
     'tbsp',
     'ml',
-    'ltr'
 ]
 
 export const AddIngredientPage = () => {
